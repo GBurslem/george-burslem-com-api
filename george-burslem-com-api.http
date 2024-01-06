@@ -1,0 +1,6 @@
+@george_burslem_com_api_HostAddress = http://localhost:5066
+
+GET {{george_burslem_com_api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
