@@ -9,5 +9,11 @@ namespace GeorgeBurslemComApi.Controllers
         public ActionResult<string> Get(){
             return Ok("Speaking to you from ASP .NET Core Web API!");
         }
+
+        [HttpPost]
+        public ActionResult<string> Post([FromBody] GreetingModel greeting)
+        {
+            return Ok($"Received your message: {greeting.Message}");
+        }
     }
 } 
